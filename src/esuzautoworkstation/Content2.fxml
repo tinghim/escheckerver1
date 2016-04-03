@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.5" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="esuzautoworkstation.Content2Controller">
+  <children>
+    <ScrollPane layoutX="0.0" layoutY="0.0" prefHeight="100.5" prefWidth="600.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="585.0">
+          <children>
+            <Label layoutX="14.0" layoutY="14.0" prefWidth="254.0" text="This is Content2 ScrollPane" />
+            <Label layoutX="14.0" layoutY="166.0" prefWidth="254.0" text="This is Content2 ScrollPane" />
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

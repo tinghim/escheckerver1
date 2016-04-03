@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="1898.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="esuzautoworkstation.SelectBrandController">
+  <children>
+    <ScrollPane layoutX="7.0" layoutY="7.0" prefHeight="785.0" prefWidth="1884.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="997.0" prefWidth="1868.0">
+          <children>
+            <ImageView id="imgApple" fx:id="btnSelectBrandApple" fitHeight="342.85714285714283" fitWidth="276.0" layoutX="140.0" layoutY="181.0" onMouseClicked="#handleMouseClick_btnSelectBrandApple" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/apple_icon.png" />
+              </image>
+            </ImageView>
+            <ImageView id="ImgLG" fitHeight="373.5" fitWidth="498.0" layoutX="607.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/lg_icon.png" />
+              </image>
+            </ImageView>
+            <ImageView id="ImgSamsung" fitHeight="373.5" fitWidth="498.0" layoutX="1073.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/samsung_icon.png" />
+              </image>
+            </ImageView>
+            <ImageView id="ImgHTC" fitHeight="129.8900041082298" fitWidth="419.0" layoutX="110.0" layoutY="685.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/htc_icon.jpg" />
+              </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="50.0" prefHeight="66.0" prefWidth="419.0" text="請選擇品牌">
+              <font>
+                <Font size="36.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

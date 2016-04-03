@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="esuzautoworkstation.SelectModelController">
+  <children>
+    <ScrollPane fitToHeight="false" fitToWidth="false" layoutX="0.0" layoutY="0.0" prefHeight="800.0" prefWidth="1900.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1900.0">
+          <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="114.0" layoutY="151.0" onMouseClicked="#handleMouseClick_btnSelectIphone6sp" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/iphone/iphone_6s_plus_compare_large.jpg" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="305.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/iphone/iphone_6s_compare_large.jpg" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="505.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/iphone/iphone_6_compare_large.jpg" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="677.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@img/iphone/iphone_se_compare_large.jpg" />
+              </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="114.0" layoutY="337.0" prefWidth="129.51220703125" text="iPhone 6s plus" />
+            <Label alignment="CENTER" layoutX="295.0" layoutY="337.0" prefWidth="129.51220703125" text="iPhone 6s" />
+            <Label alignment="CENTER" layoutX="483.0" layoutY="337.0" prefWidth="129.51220703125" text="iPhone 6" />
+            <Label alignment="CENTER" layoutX="662.0" layoutY="337.0" prefWidth="129.51220703125" text="iPhone SE" />
+            <Label layoutX="100.0" layoutY="50.0" prefHeight="66.0" prefWidth="419.0" text="請選擇型號">
+              <font>
+                <Font size="36.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

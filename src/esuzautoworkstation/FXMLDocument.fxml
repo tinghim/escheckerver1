@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="esuzautoworkstation.FXMLDocumentController">
+  <children>
+    <Pane fx:id="pneFooter" layoutX="1.0" layoutY="900.0" prefHeight="100.0" prefWidth="1899.0">
+      <children>
+        <Label fx:id="lblMessage" layoutX="14.0" layoutY="14.0" minHeight="16.0" minWidth="69.0" />
+      </children>
+    </Pane>
+    <Pane fx:id="pneHeader" layoutX="0.0" layoutY="1.0" prefHeight="100.0" prefWidth="1899.0" />
+    <Pane fx:id="pneMainPanel" layoutX="2.0" layoutY="101.0" pickOnBounds="true" prefHeight="799.0" prefWidth="1898.0" />
+  </children>
+</AnchorPane>

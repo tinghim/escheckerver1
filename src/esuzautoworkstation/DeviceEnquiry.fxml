@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="esuzautoworkstation.DeviceEnquiryController">
+  <children>
+    <ImageView fitHeight="527.3702339426338" fitWidth="445.798583984375" layoutX="410.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/iphone/iphone6sp/iphone6s-plus-silver-select-2015.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="100.0" layoutY="50.0" prefHeight="66.0" prefWidth="648.0" text="請回答以下關於你的電子產品的問題：">
+      <font>
+        <Font size="36.0" fx:id="x2" />
+      </font>
+    </Label>
+    <GridPane layoutX="932.0" layoutY="150.0" prefHeight="419.0" prefWidth="641.0">
+      <children>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Label layoutX="14.0" layoutY="34.0" text="開關 ">
+              <font>
+                <Font size="24.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="86.0" prefHeight="40.0" prefWidth="139.0" text="產品是否可以正常開啟及運作" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Label font="$x1" layoutX="14.0" layoutY="34.0" text="開關 " />
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="86.0" prefHeight="40.0" prefWidth="139.0" text="產品是否可以正常開啟及運作" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <Label font="$x1" layoutX="14.0" layoutY="34.0" prefWidth="110.0" text="顯示器 " />
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="83.0" prefHeight="66.0" prefWidth="139.0" text="顯示器是否狀態良好(正常使用下造成的磨損是可接受的)?" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Label font="$x1" layoutX="14.0" layoutY="34.0" prefWidth="110.0" text="按鈕 " />
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="83.0" prefHeight="66.0" prefWidth="139.0" text="按鈕是否可以正常運作?" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <children>
+            <Label font="$x1" layoutX="14.0" layoutY="34.0" prefWidth="110.0" text="外觀 " />
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="83.0" prefHeight="66.0" prefWidth="139.0" text="產品外觀是否完整(正常使用下造成的磨損是可接受的)?" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <children>
+            <Label font="$x1" layoutX="14.0" layoutY="34.0" prefWidth="110.0" text="液體損壞" />
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="83.0" prefHeight="66.0" prefWidth="139.0" text="是否沒有液體損壞的跡象?" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <children>
+            <Label font="$x1" layoutX="14.0" layoutY="34.0" prefWidth="110.0" text="相機 " />
+            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="83.0" prefHeight="66.0" prefWidth="139.0" text="這台裝置可不可以用閃光燈拍照?" wrapText="true" />
+            <RadioButton layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="是" />
+            <RadioButton layoutX="200.0" layoutY="96.0" mnemonicParsing="false" text="否" />
+          </children>
+        </Pane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button font="$x2" layoutX="1340.0" layoutY="581.0" maxHeight="150.0" maxWidth="419.0" minHeight="96.0" minWidth="147.0" mnemonicParsing="false" onAction="#handleAction_btnOK" prefHeight="96.0" prefWidth="147.0" text="OK" />
+  </children>
+</AnchorPane>

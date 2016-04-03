@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="esuzautoworkstation.CollectionPriceController">
+  <children>
+    <Label layoutX="100.0" layoutY="50.0" prefHeight="66.0" prefWidth="419.0" text="回收價 (100% NEW)">
+      <font>
+        <Font size="36.0" fx:id="x1" />
+      </font>
+    </Label>
+    <ImageView fitHeight="527.3702339426338" fitWidth="445.798583984375" layoutX="410.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/iphone/iphone6sp/iphone6s-plus-silver-select-2015.png" />
+      </image>
+    </ImageView>
+    <Accordion expandedPane="$null" layoutX="657.0" layoutY="150.0" />
+    <ListView fx:id="CollectionPriceInfo" layoutX="967.0" layoutY="151.0" prefHeight="392.0" prefWidth="446.0" />
+    <Button font="$x1" layoutX="1266.0" layoutY="569.0" maxHeight="150.0" maxWidth="419.0" minHeight="96.0" minWidth="147.0" mnemonicParsing="false" onAction="#handleAction_btnOK" prefHeight="96.0" prefWidth="147.0" text="OK" />
+    <Label layoutX="967.0" layoutY="569.0" prefHeight="96.0" prefWidth="299.0" text="\$4000.00">
+      <font>
+        <Font size="72.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
