@@ -10,7 +10,8 @@
   <children>
     <Pane fx:id="pneFooter" layoutX="1.0" layoutY="900.0" prefHeight="100.0" prefWidth="1899.0">
       <children>
-        <Label fx:id="lblMessage" layoutX="14.0" layoutY="14.0" minHeight="16.0" minWidth="69.0" />
+        <Label fx:id="lblMessage" layoutX="131.0" layoutY="14.0" minHeight="16.0" minWidth="69.0" prefHeight="72.0" prefWidth="210.0" />
+        <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAction_btnBack" prefHeight="72.0" prefWidth="101.0" text="Back" />
       </children>
     </Pane>
     <Pane fx:id="pneHeader" layoutX="0.0" layoutY="1.0" prefHeight="100.0" prefWidth="1899.0" />

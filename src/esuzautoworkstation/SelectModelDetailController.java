@@ -24,7 +24,7 @@ public class SelectModelDetailController extends BaseController {
     private void handleAction_btnSelect128GB(ActionEvent event) throws IOException {
         System.out.println("btnSelectBrandApple click!");
         //GOTO Select Brand
-        this.getManager().switchMainPane("CollectionPrice.fxml");
+        this.getManager().switchMainPane("CollectionPrice.fxml","SelectModelDetail.fxml");
         
     }
      

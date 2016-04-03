@@ -32,7 +32,7 @@ public class SelectBrandController extends BaseController {
     private void handleMouseClick_btnSelectBrandApple(MouseEvent event) throws IOException {
         System.out.println("btnSelectBrandApple click!");
         //GOTO Select Brand
-        this.getManager().switchMainPane("SelectModel.fxml");
+        this.getManager().switchMainPane("SelectModel.fxml","SelectBrand.fxml");
         
     }
     /**

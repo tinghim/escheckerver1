@@ -5,17 +5,23 @@
  */
 package esuzautoworkstation;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
   
 /**
  *
  * @author walla
  */
-public class BaseController  implements Initializable{
+public abstract class BaseController  implements Initializable{
 
+    
     SwitchPaneManager spManager;
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -23,11 +29,13 @@ public class BaseController  implements Initializable{
     }    
     
     public void initManager(final SwitchPaneManager spManager) {
-        System.out.println("initManager!");
+        //System.out.println("initManager!");
         this.spManager = spManager;
     }
     
     public SwitchPaneManager getManager(){
         return spManager;
     }
+    
+
 }

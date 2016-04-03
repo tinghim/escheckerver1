@@ -22,7 +22,7 @@ public class SelectModelController extends BaseController {
     private void handleMouseClick_btnSelectIphone6sp(MouseEvent event) throws IOException {
         System.out.println("btnSelectBrandApple click!");
         //GOTO Select Brand
-        this.getManager().switchMainPane("SelectModelDetail.fxml");
+        this.getManager().switchMainPane("SelectModelDetail.fxml", "SelectModel.fxml");
         
     }
         

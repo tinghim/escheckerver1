@@ -23,14 +23,14 @@ public class PersonalInfoController extends BaseController {
     private void handleAction_btnOK(ActionEvent event) throws IOException {
         //GOTO Select Brand
         //submit personal info to server and goto EnquiredPrice.fxml
-        this.getManager().switchMainPane("EnquiredPrice.fxml");
+        this.getManager().switchMainPane("EnquiredPrice.fxml", "PersonalInfo.fxml");
         
     }
     
     @FXML
     private void handleAction_btnSkip(ActionEvent event) throws IOException {
         //goto EnquiredPrice.fxml
-        this.getManager().switchMainPane("EnquiredPrice.fxml");
+        this.getManager().switchMainPane("EnquiredPrice.fxml", "PersonalInfo.fxml");
         
     }
     /**

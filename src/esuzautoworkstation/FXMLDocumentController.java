@@ -18,6 +18,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 
@@ -39,19 +40,45 @@ public class FXMLDocumentController extends BaseController {
     @FXML
     private Pane pneFooter;
   
+    @FXML
+    private Button btnBack;
+    
+    @FXML
+    private void handleAction_btnBack(ActionEvent event) throws IOException {
+        //GOTO Select Brand
+        System.out.println("FXMLDocumentController btnBack click");
+        this.getManager().backToPrevPane();
+    }
+    
+    //interact with SwithPaneManager to change the pane in main
     public void switchMainPane(String fxmlFilePath) throws IOException {
-//            pneMainPanel.getChildren().clear();
-//            pneMainPanel.getChildren().add((Node)FXMLLoader.load(getClass().getResource(fxmlFilePath)));
+        System.out.println("FXMLDocumentController switchMainPane " + fxmlFilePath  );
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFilePath));
-        Parent root = (Parent) loader.load();
-        BaseController controller = loader.<BaseController> getController();
-        controller.initManager(getManager());   
+        Pane pane = (Pane)loader.load();
+
+        BaseController controller = (BaseController) loader.getController();
+        controller.initManager(getManager());  
+        
         pneMainPanel.getChildren().clear();
-        pneMainPanel.getChildren().add((Node)root);
+        pneMainPanel.getChildren().add(pane);
+        
+//
+//        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFilePath));
+//        
+//        Parent root = (Parent) loader.load();
+//        BaseController controller = loader.<BaseController> getController();
+//        controller.initManager(getManager());   
+//        pneMainPanel.getChildren().clear();
+//        pneMainPanel.getChildren().add((Node)root);
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
        
     }  
+
+
+    
+    
+    
 }

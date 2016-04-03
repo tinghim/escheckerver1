@@ -28,7 +28,7 @@ public class EnquiredPriceController extends BaseController {
     private void handleAction_btnOK(ActionEvent event) throws IOException {
         //GOTO Select Brand
         //submit personal info to server and goto EnquiredPrice.fxml
-        this.getManager().switchMainPane("MainPane.fxml");
+        this.getManager().switchMainPane("MainPane.fxml","EnquiredPrice.fxml");
         
     }
     /**

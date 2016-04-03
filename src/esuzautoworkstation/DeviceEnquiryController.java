@@ -10,7 +10,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
 /**
  * FXML Controller class
@@ -22,8 +21,8 @@ public class DeviceEnquiryController extends BaseController {
     @FXML
     private void handleAction_btnOK(ActionEvent event) throws IOException {
         //GOTO Select Brand
-       this.getManager().switchMainPane("PersonalInfo.fxml");
-        
+       this.getManager().switchMainPane("PersonalInfo.fxml","DeviceEnquiry.fxml");
+       
     }
     /**
      * Initializes the controller class.
@@ -32,5 +31,7 @@ public class DeviceEnquiryController extends BaseController {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+ 
     
 }
